@@ -22,6 +22,8 @@ const resultsList = document.getElementById('resultsList');
 //función para buscar el digimon por nombre
 searchButton.addEventListener('click', (e) => {
     e.preventDefault()
+    $("#digimon").addClass("d-none")
+    $("#tabla").removeClass("d-none")
     const query = searchField.value;
     fetch(`https://digimon-api.vercel.app/api/digimon/name/${query}`)
         .then(response => response.json())
