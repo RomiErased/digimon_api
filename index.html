@@ -9,6 +9,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>API Digimon</title>
+    <link rel="shortcut icon" href="./assets/img/Favicon.ico">
 </head>
 
 <body>
@@ -28,39 +29,39 @@
                                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="https://github.com/RomiErased/digimon_api">GitHub</a>
                             </li>
                             <li class="nav-list dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Nivel
+                                    Buscar por Nivel
                                 </a>
                             <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                    <li><a class="dropdown-item" href="#" onclick="verNivel('in training')">In Training</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="verNivel('rookie')">Rookie</a></li>    
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('champion')">Champion</a></li>  
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('ultimate')">Ultimate</a></li>
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('fresh')">Fresh</a></li>
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('mega')">Mega</a></li>
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('training')">Training</a></li>
+                                    <li><a class="dropdown-item" href="#"onclick="verNivel('armor')">Armor</a></li>
+                            </ul>                                                                
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input id="searchField" class="form-control me-2" type="search" placeholder="Search"
+                            <input id="searchField" class="form-control me-2" type="search" placeholder="Buscar por Nombre"
                                 aria-label="Search">
-                            <button class="btn btn-outline-success" id="btn-buscar" type="submit">Search</button>
+                            <button class="btn btn-outline-success" id="btn-buscar" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </header>
-
-        <section class="container">
-            <div class="row">
-                <div class="col-4">
-
-                </div>
-                <table id="table-posts" class="table">
+        <div id="digimon" style="padding-top:56.200%;position:relative;"><iframe src="https://gifer.com/embed/B4fI" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div>
+        <section id="tabla" class="container pt-4 d-none">
+            <div class="row col-0 me-auto mb-2 mb-lg-0">
+                
+                <table id="table-posts" class="table ">
                     <thead>
                         <tr>
                             <th>Nombre</th>
