@@ -1,2 +1,3 @@
-# digimon_api
-API Digimon. Proyecto para TalentoDigital
+# Digimon API
+
+Proyecto para TalentoDigital
